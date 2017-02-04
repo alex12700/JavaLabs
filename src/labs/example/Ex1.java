@@ -10,5 +10,6 @@ public class Ex1 {
             System.out.println(i);
         }
         System.out.println("BTOOOOOOM");
+        System.out.println("mother father");
     }
 }
