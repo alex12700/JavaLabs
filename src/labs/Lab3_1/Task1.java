@@ -4,7 +4,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by Алексаелп on 29.01.2017.
+ * 1.	HashSet из растений Создать коллекцию HashSet с типом элементов String.
+ * Добавить в неё 10 строк: арбуз, банан, вишня, груша, дыня, ежевика, жень-шень, земляника, ирис, картофель.
+ * Вывести содержимое коллекции на экран, каждый элемент с новой строки.
+ * Посмотреть, как изменился порядок добавленных элементов
  */
 public class Task1 {
     public static void main(String[] args) {
@@ -24,6 +27,5 @@ public class Task1 {
         for (String text : fructs){
             System.out.println(text);
         }
-        qwe sss = new qwe();
     }
 }

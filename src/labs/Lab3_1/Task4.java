@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Алексаелп on 29.01.2017.
+ * 4.	Вывести на экран список ключей Есть коллекция HashMap<String, String>, туда занесли 10 различных строк.
+ * Вывести на экран список ключей, каждый элемент с новой строки.
  */
 public class Task4 {
     public static void main(String[] args) {
@@ -16,7 +17,6 @@ public class Task4 {
         for (String key : collection.keySet()){
             System.out.print(key + " = ");
             System.out.println(collection.get(key));
-            System.out.println();
         }
     }
 }

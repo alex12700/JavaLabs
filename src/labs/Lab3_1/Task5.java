@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Алексаелп on 29.01.2017.
+ * 6.	Коллекция HashMap из Object Есть коллекция HashMap<String, Object>, туда занесли 10 различных пар объектов.
+ * Вывести содержимое коллекции на экран, каждый элемент с новой строки.
  */
 public class Task5 {
     public static void main(String[] args) {
