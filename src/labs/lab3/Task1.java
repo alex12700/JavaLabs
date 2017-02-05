@@ -9,7 +9,7 @@ public class Task1 {
     public static void main(String[] args) {
         int[] array = new int[10];
         for (int i = 0; i <= 9; i++) {
-            array[i] = (i+1)*2;
+            array[i] = (i + 1) * 2;
             System.out.print(array[i] + " ");
         }
         System.out.println();
