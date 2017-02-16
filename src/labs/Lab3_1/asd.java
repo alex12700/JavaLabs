@@ -7,6 +7,7 @@ public class asd extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JTextPane textPane1;
 
     public asd() {
         setContentPane(contentPane);

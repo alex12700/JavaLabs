@@ -10,13 +10,12 @@ import java.util.Map;
 public class Task4 {
     public static void main(String[] args) {
         Map<String, String> collection = new HashMap<String, String>();
-        for (int i =1; i <= 10; i++){
+        for (int i = 1; i <= 10; i++) {
             collection.put("key" + i, "value" + i);
         }
 
-        for (String key : collection.keySet()){
-            System.out.print(key + " = ");
-            System.out.println(collection.get(key));
+        for (String key : collection.keySet()) {
+            System.out.println(key);
         }
     }
 }
