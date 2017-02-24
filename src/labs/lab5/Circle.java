@@ -1,28 +1,29 @@
 package labs.lab5;
 
-import javafx.scene.shape.Circle;
+import labs.lab4.Task1;
 
 import java.util.Scanner;
 
 /**
  * Created by Алексаелп on 12.02.2017.
  */
-public class Task1 {
-    int x;
-    int y;
-    int r;
+public class Circle {
+    private int x;
+    private int y;
+    private int r;
 
     void line_circle() {
         System.out.println(Math.PI * r * 2);
     }
 
     void random_center() {
-        x = (int) (Math.random() * 202 - 101);
-        y = (int) (Math.random() * 202 - 101);
+        x = Task1.two_variables(-99,99);
+        y = Task1.two_variables(-99,99);
         System.out.println(x + "   " + y);
+
     }
 
-    public Task1() {
+    public Circle() {
         Scanner dan = new Scanner(System.in);
         System.out.println("Введите x");
         x = dan.nextInt();
@@ -32,19 +33,19 @@ public class Task1 {
         r = dan.nextInt();
     }
 
-    public Task1(int x, int y, int r) {
+    public Circle(int x, int y, int r) {
         this.x = x;
         this.y = y;
         this.r = r;
     }
 
-    void distanc(int x2, int y2) {
+    void distans(int x2, int y2) {
         double dx = x - x2;
         double dy = y - y2;
         System.out.println("расстояние = " + Math.hypot(dx, dy));
     }
 
-    void two_circle(Task1 cir) {
+    void two_circle(Circle cir) {
         double dx = this.x - cir.x;
         double dy = this.y - cir.y;
         double dr = this.r + cir.r;
@@ -54,11 +55,11 @@ public class Task1 {
     }
 
     public static void main(String[] args) {
-        Task1 cira = new Task1(0, 0, 1);
-        Task1 ciro = new Task1(0, 0, 1);
+        Circle cira = new Circle(0, 0, 1);
+        Circle ciro = new Circle(0, 0, 1);
         cira.two_circle(ciro);
         //cira.random_center();
         cira.line_circle();
-        cira.distanc(5 ,5);
+        cira.distans(5, 5);
     }
 }

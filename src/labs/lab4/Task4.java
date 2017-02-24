@@ -1,8 +1,6 @@
-package labs.Lab4;
+package labs.lab4;
 
 import java.util.Date;
-import java.util.Timer;
-import java.util.TimerTask;
 
 /**
  * Created by Алексаелп on 05.02.2017.

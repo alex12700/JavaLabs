@@ -1,6 +1,6 @@
 package labs.example;
 
-import labs.Lab3_1.Cat;
+import labs.lab3_1.Cat;
 
 import java.util.HashMap;
 import java.util.Map;
