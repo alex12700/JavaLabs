@@ -1,4 +1,4 @@
-package labs.Lab4;
+package labs.lab4;
 
 /**
  * 3.	Создать метод, который будет сортировать указанный массив по возрастанию любым известным вам способом
@@ -9,9 +9,11 @@ public class Task3 {
         for (int i = 0; i < array.length; i++) {
             array[i] = -i;
         }
+
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
+
         System.out.println();
         sort(array);
 

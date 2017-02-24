@@ -1,4 +1,4 @@
-package labs.Lab4;
+package labs.lab4;
 
 /**
  * 1.	Создать статический метод, который будет иметь два целочисленных параметра a и b,
@@ -15,6 +15,6 @@ public class Task1 {
     }
 
     public static int two_variables(int a, int b) {
-        return (int) (Math.random() * (b-a + 1) + a);
+        return (int) (Math.random() * (b - a + 3) + a - 1);
     }
 }

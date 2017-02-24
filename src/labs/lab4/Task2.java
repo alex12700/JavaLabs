@@ -1,4 +1,4 @@
-package labs.Lab4;
+package labs.lab4;
 
 /**
  * 2.	Создать метод, который будет выводить указанный массив на экран в строку.
@@ -7,18 +7,17 @@ package labs.Lab4;
  */
 public class Task2 {
     public static void main(String[] args) {
-        Task1 random = new Task1();
         int[] array1 = new int[20];
         int[] array2 = new int[20];
         int[] array3 = new int[20];
         int[] array4 = new int[20];
         int[] array5 = new int[20];
         for (int i = 0; i < array1.length; i++) {
-            array1[i] = random.two_variables(20,10);
-            array2[i] = random.two_variables(20,10);
-            array3[i] = random.two_variables(20,10);
-            array4[i] = random.two_variables(20,10);
-            array5[i] = random.two_variables(20,10);
+            array1[i] = Task1.two_variables(20,10);
+            array2[i] = Task1.two_variables(20,10);
+            array3[i] = Task1.two_variables(20,10);
+            array4[i] = Task1.two_variables(20,10);
+            array5[i] = Task1.two_variables(20,10);
         }
         output_array(array1);
         output_array(array2);
