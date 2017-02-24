@@ -12,6 +12,6 @@ public class Pickup implements PassangersAuto, CargoAuto {
     public void shipping(int weight){
         if (weight < 0) return;
         if (weight > 2500) System.out.println("слишком тяжелый груз");
-        else System.out.printf("увезу");
+        else System.out.printf("увезу йцуйцуйцу");
     };
 }
