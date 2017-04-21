@@ -9,12 +9,11 @@ public class Task1 {
     public static void main(String[] args) {
         int[] array = new int[20];
         for (int i = 0; i < array.length; i++) {
-            array[i] = two_variables(two_variables(100, 0), two_variables(100, 0));
+            array[i] = two_variables(-10, 10);
             System.out.println(array[i]);
         }
     }
-
     public static int two_variables(int a, int b) {
-        return (int) (Math.random() * (b - a + 3) + a - 1);
+        return (int) (Math.random() * (b - a + 1) + a);
     }
 }

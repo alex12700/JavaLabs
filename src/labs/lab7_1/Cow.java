@@ -1,7 +1,7 @@
 package labs.lab7_1;
 
 /**
- * Created by Алексаелп on 23.02.2017.
+ * 1.	Переопределить метод getName в классе Whale(Кит), чтобы программа выдавала: Я не корова, Я – кит.
  */
 public class Cow {
     public void printAll()
@@ -18,4 +18,11 @@ public class Cow {
         System.out.println("Я – корова");
     }
 
+}
+
+class Whale extends Cow {
+    public void printName()
+    {
+        System.out.println("я не корова, я - кит");
+    }
 }

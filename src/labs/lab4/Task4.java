@@ -3,22 +3,22 @@ package labs.lab4;
 import java.util.Date;
 
 /**
- * Created by Алексаелп on 05.02.2017.
+ * 1.	Выясните экспериментальном путём, начиная с какого элемента последовательности Фибоначчи,
+ * вычисление с использованием рекурсии становится неприемлемым (занимает более минуты по времени).
  */
 public class Task4 {
     public static void main(String[] args) {
-        for (int i = 1; i <= 100; i++) {
+        long dif;
+        int i = 0;
+        do {
+            i++;
             Date start = new Date();
             System.out.println(i + " " + fib(i));
             Date end = new Date();
-            long dif = end.getTime() - start.getTime();
-            if (dif > 60000) {
-                System.out.println("найден тот самый номер:" + i);
-                break;
-            }
-        }
+            dif = end.getTime() - start.getTime();
+        } while (dif < 60000);
+        System.out.println("найден тот самый номер:" + i);
     }
-
 
     static long fib(int n) {
         if (n == 1 || n == 2) {

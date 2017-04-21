@@ -21,3 +21,6 @@ public class Task3 {
         }
     }
 }
+class Cat {
+    String name = "Kotik";
+}

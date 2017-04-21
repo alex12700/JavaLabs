@@ -26,8 +26,9 @@ public class Task2 {
         output_array(array5);
     }
 
-    public static void output_array(int[] a) {
-        for (int i = 0; i < a.length; i++) {
+    private static void output_array(int[] a) {
+        for (int i: a)
+        {
             System.out.print(a[i] + " ");
         }
         System.out.println();

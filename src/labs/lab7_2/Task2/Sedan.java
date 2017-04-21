@@ -3,7 +3,7 @@ package labs.lab7_2.Task2;
 /**
  * Created by Алексаелп on 23.02.2017.
  */
-public class Sedan {
+public class Sedan implements CargoAuto, PassangersAuto{
     public void passengerTransport(int people){
         if (people < 0 ) return;
         if (people < 4) System.out.println(people + " могу увезти");

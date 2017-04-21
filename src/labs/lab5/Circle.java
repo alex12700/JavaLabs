@@ -5,22 +5,29 @@ import labs.lab4.Task1;
 import java.util.Scanner;
 
 /**
- * Created by Алексаелп on 12.02.2017.
+ * 1.	Создайте в классе Circle метод, вычисляющий длину окружности.
+ * 2.	Создайте в классе Circle метод, перемещающий центр круга в случайную точку квадрата координатной плоскости
+ * с диагональю от [-99;-99] до [99;99]. Обратите внимание на то, что требуется создать обычный метод, применимый
+ * к уже существующему объекту, а не конструктор создающий новый объект.
+ * 3.	Измените в классе Circle конструктор по умолчанию так, чтобы в момент создания объекта с его помощью,
+ * координаты центра и радиус окружности пользователь вводил с клавиатуры.
+ * 4.	Создайте в классе Circle метод, вычисляющий расстояние между центрами двух окружностей.
+ * 5.	Создайте в классе Circle метод, проверяющий, касаются ли окружности в одной точке. Учтите, что возможен вариант,
+ * когда одна окружность содержится внутри другой и при этом всё равно возможно касание в одной точке.
  */
 public class Circle {
     private int x;
     private int y;
     private int r;
 
-    void line_circle() {
+    public void line_circle() {
         System.out.println(Math.PI * r * 2);
     }
 
-    void random_center() {
-        x = Task1.two_variables(-99,99);
-        y = Task1.two_variables(-99,99);
+    public void random_center() {
+        x = Task1.two_variables(-99, 99);
+        y = Task1.two_variables(-99, 99);
         System.out.println(x + "   " + y);
-
     }
 
     public Circle() {
@@ -33,33 +40,32 @@ public class Circle {
         r = dan.nextInt();
     }
 
-    public Circle(int x, int y, int r) {
+    public Circle(int x, int y, int r){
         this.x = x;
         this.y = y;
         this.r = r;
     }
 
-    void distans(int x2, int y2) {
-        double dx = x - x2;
-        double dy = y - y2;
+    public static void srav(Circle ciro, Circle cira){
+        if (ciro.r > cira.r)
+            System.out.println(ciro.r);
+        else
+            System.out.println(cira.r);
+    }
+
+    public void distans(Circle cir) {
+        double dx = x - cir.x;
+        double dy = y - cir.y;
         System.out.println("расстояние = " + Math.hypot(dx, dy));
     }
 
-    void two_circle(Circle cir) {
+    public void two_circle(Circle cir) {
         double dx = this.x - cir.x;
         double dy = this.y - cir.y;
         double dr = this.r + cir.r;
         double dist = Math.hypot(dx, dy) - dr;
-        if (dist > 0) System.out.println("не касаются");
-        else System.out.println("касаются");
-    }
-
-    public static void main(String[] args) {
-        Circle cira = new Circle(0, 0, 1);
-        Circle ciro = new Circle(0, 0, 1);
-        cira.two_circle(ciro);
-        //cira.random_center();
-        cira.line_circle();
-        cira.distans(5, 5);
+        double extra = Math.hypot(dx, dy) + (this.r < cir.r ? this.r : cir.r) - (this.r > cir.r ? this.r : cir.r);
+        if (dist == 0 || extra == 0) System.out.println("касаются");
+        else System.out.println("не касаются");
     }
 }

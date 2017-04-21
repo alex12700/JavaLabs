@@ -1,5 +1,10 @@
 package labs.lab7_2.Task2;
 
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+
 /**
  * Created by Алексаелп on 23.02.2017.
  */

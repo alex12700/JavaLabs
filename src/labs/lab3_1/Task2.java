@@ -11,20 +11,25 @@ import java.util.Map;
 public class Task2 {
     public static void main(String[] args) {
         Map<String, String> collection = new HashMap<String, String>();
-        collection.put("арбуз","ягода" );
-        collection.put("банан","трава" );
-        collection.put("вишня","ягода" );
-        collection.put("груша","фрукт" );
-        collection.put("дыня","овощ" );
-        collection.put("ежевика","куст" );
-        collection.put("жень-шень","корень" );
-        collection.put("земляника","ягода" );
-        collection.put("ирис","цветок" );
-        collection.put("картофель","клубень" );
+        collection.put("арбуз", "ягода");
+        collection.put("банан", "трава");
+        collection.put("вишня", "ягода");
+        collection.put("груша", "фрукт");
+        collection.put("дыня", "овощ");
+        collection.put("ежевика", "куст");
+        collection.put("жень-шень", "корень");
+        collection.put("земляника", "ягода");
+        collection.put("ирис", "цветок");
+        collection.put("картофель", "клубень");
 
-        for (String key : collection.keySet()){
-            System.out.print(key + " = ");
-            System.out.println(collection.get(key));
+//        for (String key : collection.keySet()){
+//            System.out.print(key + " = ");
+//            System.out.println(collection.get(key));
+//        }
+
+        for (Map.Entry entery : collection.entrySet()) {
+            System.out.println(entery.getValue() + " = ");
+            System.out.println(entery.getKey());
         }
     }
 }
